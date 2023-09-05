@@ -1,11 +1,16 @@
 
-import AppRouters from "./Router/AppRouters"
+import AppRouters from "./Router/AppRouters";
+import { useUserData } from "./hooks/useUserData";
+import { MyContext } from "./context/MyContext";
+
 function App() {
+  const { userData } = useUserData();
+
   return (
-    <div>
+    <MyContext.Provider value={{ userData }}>
       <AppRouters />
-    </div>
-  )
+    </MyContext.Provider>
+  );
 }
 
-export default App
+export default App;
