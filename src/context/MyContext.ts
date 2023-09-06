@@ -5,6 +5,7 @@ export interface User {
     name: string;
     user_name: string;
     profilePic: string | null;
+    desc: string;
 }
 
 interface ContextValue {
