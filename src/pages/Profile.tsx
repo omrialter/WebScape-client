@@ -20,7 +20,7 @@ function Profile() {
             <div >
                 <div className="py-5  text-slate-600 ">
 
-                    <div className='text-4xl font-bold text-center  '>Profile page</div>
+                    <div className='text-4xl font-bold text-center'>Profile page</div>
 
 
                 </div>
